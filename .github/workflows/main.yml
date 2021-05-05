@@ -13,10 +13,8 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        if: success()
         run: zip --junk-paths build node_modules 
       - name: Create release
-        if: success()
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -27,7 +25,6 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload release asset
-        if: success()
         id: upload_release_asset
         uses: actions/upload-release-asset@v1
         env:
