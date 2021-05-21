@@ -10,6 +10,7 @@
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@uiw/react-github-corners": "^1.2.0",
+    "fetch-mock": "^9.11.0",
     "mobx": "^6.3.0",
     "mobx-react": "^7.1.0",
     "normalize.css": "^8.0.1",
